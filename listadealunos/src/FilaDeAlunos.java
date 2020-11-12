@@ -1,6 +1,6 @@
 /**
  * Classe que controla uma fila de alunos - FIFO
- * @author Andrea
+ * @author Diego Lins
  * @version 24/09/2020
  */
 public class FilaDeAlunos {
@@ -14,8 +14,8 @@ public class FilaDeAlunos {
         dados= new Aluno[capMax];
     }
     /**
-     * Método que adiciona um novo elemento no final da fila
-     * @param e é o novo aluno
+     * Metodo que adiciona um novo elemento no final da fila
+     * @param  novo aluno
      */
     public void adiciona(Aluno e){
         if (dados.length==tamanho){
@@ -42,7 +42,7 @@ public class FilaDeAlunos {
         return r;
     }
     /**
-     * Método que retorna todos os alunos da fila
+     * Metodo que retorna todos os alunos da fila
      * @return String com os dados de todos os alunos
      */
     public String toString(){

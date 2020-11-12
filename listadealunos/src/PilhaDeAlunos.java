@@ -1,6 +1,6 @@
 /**
  * Esta classe controla uma pilha com alunos - LIFO
- * @author Andrea
+ * @author Diego Lins
  * @version 24/09/2020
  */
 public class PilhaDeAlunos {
@@ -8,15 +8,15 @@ public class PilhaDeAlunos {
     private int topo;
     /**
      * Construtor
-     * @param capMax capacidade máxima da pilha 
+     * @param capMax capacidade maxima da pilha 
      */
     public PilhaDeAlunos(int capMax){
         dados = new Aluno[capMax];
         topo = -1;
     }
     /**
-     * Método que adiciona novo aluno no topo da pilha
-     * @param e é o novo aluno
+     * Metodo que adiciona novo aluno no topo da pilha
+     * @param  novo aluno
      */
     public void empilha(Aluno e){
         if (topo+1 == dados.length){
@@ -29,7 +29,7 @@ public class PilhaDeAlunos {
         }
     }
     /**
-     * Método que desempilha um elemento
+     * Metodo que desempilha um elemento
      * @return aluno removido da pilha
      */
     public Aluno desempilha(){
@@ -42,7 +42,7 @@ public class PilhaDeAlunos {
         return r;
     }
     /**
-     * Método que retorna todos os elementos da Pilha
+     * Metodo que retorna todos os elementos da Pilha
      * @return String com todos os elementos da Pilha
      */
     public String toString(){
